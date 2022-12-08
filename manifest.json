@@ -1,0 +1,28 @@
+{
+  "description": "Demonstrating webRequests",
+  "manifest_version": 2,
+  "name": "webRequest-demo",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "<all_urls>",
+    "storage",
+    "tabs"
+  ],
+
+  "sidebar_action": {
+    "default_title" : "Mixpanel Implementation Inspector",
+    "default_panel": "sidebar.html",
+    "default_icon": "icons/icon-48.png",
+    "browser_style": false
+  },
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
